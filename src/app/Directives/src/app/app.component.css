@@ -1,0 +1,15 @@
+p {
+  /* font: bolder; */
+  font-size: xx-large;
+  color: navy;
+  text-indent: 30px;
+  text-transform: uppercase;
+}
+table {
+  border: solid;
+  border-radius: 10px;
+}
+.bordered {
+  border: 1px dashed black;
+  background-color: #eee;
+}

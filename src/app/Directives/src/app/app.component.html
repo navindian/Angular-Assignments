@@ -1,0 +1,51 @@
+<!-- <app-acc-form></app-acc-form> -->
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" [routerLink]="['/kbc']" (click)="showmee()">KBC</a>
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="">Directives</a>
+    </li>
+  </ul>
+</nav>
+<div *ngIf="!showme">
+  <div class="col-md-4 offset-4">
+    <h4>*ngIf Example</h4>
+    <br />
+    <button (click)="show()" class="btn btn-success">Show</button> &nbsp;
+    &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;<button
+      (click)="hide()"
+      class="btn btn-danger"
+    >
+      Hide
+    </button>
+    <br />
+    <br />
+    <div *ngIf="showmsg">
+      <p [ngClass]="{ bordered: isBordered }">{{ title }}</p>
+    </div>
+  </div>
+  <br />
+  <br />
+  <br />
+  <div class="col-md-4 offset-4">
+    <h4>*ngFor Example</h4>
+  </div>
+  <br />
+  <table class="table table-bordered">
+    <thead class="thead-dark">
+      <tr>
+        <th *ngFor="let columns of headers" style="text-align: center">
+          {{ columns }}
+        </th>
+      </tr>
+    </thead>
+    <tr *ngFor="let rows of Order">
+      <td *ngFor="let columns of headers" style="text-align: center">
+        {{ rows[columns] }}
+      </td>
+    </tr>
+  </table>
+</div>
+<router-outlet></router-outlet>
+
+<!--  -->

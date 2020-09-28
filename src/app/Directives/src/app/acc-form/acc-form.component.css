@@ -1,0 +1,40 @@
+table td {
+  position: relative;
+  /* columns: 100px 3; */
+}
+
+table td input[type="text"],
+input[type="date"],
+select,
+input[type="email"],
+input[type="number"] {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  border: none;
+  padding: 10px;
+  box-sizing: border-box;
+}
+#somebutton {
+  display: inline-block;
+  vertical-align: bottom;
+}
+.btn-default {
+  font-family: Raleway-SemiBold;
+  font-size: 23px;
+  color: black;
+  background-color: darkgray;
+  letter-spacing: 1px;
+  line-height: 15px;
+  border: darkgrey 2px solid;
+  border-radius: 80px;
+  background: transparent;
+  transition: all 0.3s ease 0s;
+  width: 150px;
+  padding: 5px;
+  height: 45px;
+}

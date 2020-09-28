@@ -1,0 +1,219 @@
+<h4>Personal details</h4>
+<div class="container">
+  <form [formGroup]="registerForm" (ngSubmit)="submitted = true">
+    <table class="table table-bordered">
+      <tr>
+        <td colspan="3">
+          Enter your details for your security deposit contract.
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: right"><label>Title</label></td>
+        <td colspan="2">
+          <input type="radio" name="gender" style="color: blue" />&nbsp;
+          <label for="gender" style="color: blue"> Mr</label> &nbsp;&nbsp;&nbsp;
+          <input type="radio" name="gender" />&nbsp;
+          <label for="gender" style="color: blue"> Ms</label>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: right">
+          <label>First Name</label>
+        </td>
+        <td colspan="2">
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              formControlName="firstName"
+              placeholder="Enter your name"
+            />
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: right">
+          <label>Last Name</label>
+        </td>
+        <td colspan="2">
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              formControlName="lastName"
+              placeholder="Enter Surname"
+            />
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: right">
+          <label for="dob">Date of Birth</label>
+        </td>
+        <td colspan="2">
+          <div class="form-group">
+            <input type="date" class="form-control" formControlName="dob" />
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: right">
+          <label>National Registration number</label>
+        </td>
+        <td colspan="2">
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              formControlName="natreg"
+              placeholder="-"
+            />
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: right">Nationality</td>
+        <td colspan="2">Belgium</td>
+      </tr>
+      <tr>
+        <td style="text-align: right">Country of Origin</td>
+        <td colspan="2">Belgium</td>
+      </tr>
+      <tr>
+        <td style="text-align: right">
+          <label>Place of Birth</label>
+        </td>
+        <td colspan="2">
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              formControlName="pob"
+              placeholder="Postcode or Pincode"
+            />
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: right">
+          <label>Civil Status</label>
+        </td>
+        <td colspan="2">
+          <select formControlName="status">
+            <option value="" selected>Select your marital status</option>
+            <option value="Married">Married</option>
+            <option value="Single">Single</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3" style="font-weight: bold">Current Address</td>
+      </tr>
+      <tr>
+        <td colspan="3">Your registered address</td>
+      </tr>
+      <tr>
+        <td style="text-align: right">Country</td>
+        <td colspan="2">Belgium</td>
+      </tr>
+      <tr>
+        <td style="text-align: right">
+          <label>Postcode & place</label>
+        </td>
+        <td colspan="2">
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              formControlName="pp"
+              placeholder="Postcode or Place"
+            />
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: right">
+          <label>Street</label>
+        </td>
+        <td colspan="2">
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              formControlName="street"
+              placeholder="Street"
+            />
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: right">
+          <label>House number & Box No.</label>
+        </td>
+        <td>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              formControlName="house"
+              placeholder="House number"
+            />
+          </div>
+        </td>
+        <td>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              formControlName="boxno"
+              placeholder="Box No."
+            />
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3" style="font-weight: bold">Contact Details</td>
+      </tr>
+      <tr>
+        <td style="text-align: right">
+          <label>E-mail Address</label>
+        </td>
+        <td colspan="2">
+          <div class="form-group">
+            <input
+              type="email"
+              class="form-control"
+              formControlName="email"
+              placeholder="Enter your e-mail address"
+            />
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td style="text-align: right">
+          <label>Phone Number (optional)</label>
+        </td>
+        <td colspan="2">
+          <div class="form-group">
+            <input
+              type="number"
+              class="form-control"
+              formControlName="phno"
+              placeholder="Enter your phone number"
+            />
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3" valign="bottom" align="right">
+          <button
+            type="button"
+            class="btn btn-secondary btn-default btn-secondary"
+          >
+            Next
+          </button>
+        </td>
+      </tr>
+    </table>
+  </form>
+</div>
