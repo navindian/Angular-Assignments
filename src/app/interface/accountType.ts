@@ -1,0 +1,1 @@
+export enum accountType{savingsAccount="Savings Account",currentAccount="Current Account"}

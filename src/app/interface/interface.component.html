@@ -1,0 +1,37 @@
+
+<div class="card-container">
+    <div class="card">
+        <div class="card-body">
+        
+        <div>Account Number: {{account.accountNumber}}</div>
+        <div>Name: {{account.accountHolder}}</div>
+        <div>Account Type: {{account.type}}</div>
+        <div>Account Balance: {{account.balance}}</div>
+        
+        <input type="number" id="amount" name="amount" #amount>
+        
+        <div>
+        <button type="button" (click)="creditToAccount(amount.value)">Credit</button>
+        <br>
+        <button type="button" (click)="debitFromAccount(amount.value)">Debit</button>
+        <br>
+        <button type="button" (click)="showNominee()">Show Nominee</button>
+        </div>
+        
+        <div class="card-footer">
+        <div *ngIf="message">{{message}}</div>
+        </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="card-container" *ngIf="show==true">
+        <div class="card">
+            <div class="card-body">
+            <div class="card-header">Nominee Details</div>
+            <div>Nominee Name: {{nominee.nomineeName}}</div>
+            <div>Phone no.: {{nominee.nomineeContactNo}}</div>
+      
+            </div>
+            </div>
+        </div>
